@@ -10,10 +10,10 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: lb://movies-service-parcial
+          uri: lb://movies-service
           predicates:
             - Path=/movies/**
         - id: catalogRoute
-          uri: lb://catalog-service-parcial
+          uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
