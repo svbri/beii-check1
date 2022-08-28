@@ -17,3 +17,9 @@ spring:
           uri: http://localhost:8084/
           predicates:
             - Path=/catalog/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
